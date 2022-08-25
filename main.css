@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    min-width: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/*repetetive elements*/
+.quarter-one, .header, .mid-header, .nav-buttons ul, .logo, .quarter-two, .cards, .card,
+.quarter-three, .quarter-four, .box-container, .quarter-five {
+    display: flex;
+}
+
+
+/*quarter-one*/
+
+.quarter-one {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    padding: 1vw 10vw 5vw 10vw;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.logo {
+    align-items: center;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.nav-buttons ul{
+    list-style-type: none;
+    gap: 2vw;
+    font-size: 18px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.mid-header {
+    padding-top: 5vw;
+    gap: 3vw;
+}
+
+.mh-left h1{
+    font-size: 4vw;
+}
+
+.mh-left p {
+    font-size: 1vw;
+}
+
+.mh-left button {
+    background-color: #5A855F;
+    border: 1px solid #5A855F;
+    padding: 1.5vh 3vw;
+    margin-top: 5vh;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.mh-left button:hover {
+    background-color: white;
+    color: #5A855F;
+    border: #5A855F;
+}
+
+.image-placeholder img{
+    width: 40vw;
+    height: auto;
+    border-radius: 30px;
+}
+
+/*quarter-two*/
+
+.quarter-two {
+    color: #1a271c;
+    justify-content: center;
+    padding: 7vw 0;
+}
+
+.q2-container {
+    align-items: center;
+}
+
+.randominfo h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.cards {
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex-direction: column;
+    gap: 2vh;
+    color: #1a271c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.card img {
+    border: 5px solid #1a271c;
+    border-radius: 4px;
+    width: auto;
+    height: 20vh;
+}
+
+/*quarter-three*/
+
+.quarter-three {
+    color: #1a271c;
+    justify-content: center;
+    background-color: #e5ebe8;
+    padding: 5vw 15vw;
+}
+
+.quote {
+    font-size: 1.7vw;
+    font-style: italic;
+    color: #1a271c;
+}
+
+.author {
+    text-align: right;
+}
+
+/*quarter-four*/
+
+.quarter-four {
+    justify-content: center;
+    padding: 15vh 15vw;
+}
+
+.box-container {
+    background-color: #5A855F;
+    padding: 6vh 3vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+    border-radius: 10px;
+}
+
+.message h1, p {
+    margin: 0;
+}
+
+.signup button {
+    background-color: #5A855F;
+    border: 2px solid white;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+
+.signup button:hover {
+    border: 2px solid #5A855F;
+    background-color: white;
+    color: #5A855F;
+}
+
+/*quarter-five*/
+
+.quarter-five {
+    background-color: #3d5a40;
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+
+
+
+
+
+/*only media query bc im lazy*/
+
+@media only screen and (max-width: 800px) {
+    .mid-header {
+        flex-direction: column-reverse;
+    }
+
+    .mid-header h1 {
+        font-size: 5vh;
+    }
+
+    .mid-header p {
+        font-size: 2vh;
+    }
+
+    .image-placeholder img {
+        width: 42vh;
+    }
+
+    .card {
+        font-size: 20px;
+    }
+
+    .randominfo h1{
+        font-size: 35px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+    
+    .author {
+        font-size: 20px;
+    }
+
+    .box-container {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 5vh 4vw;
+    }
+
+    .signup {
+        align-self: flex-start;
+    }
+  }
+
+
+
